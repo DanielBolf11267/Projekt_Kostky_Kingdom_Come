@@ -16,5 +16,10 @@ namespace Projekt_Kostky_Kingdom_Come
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

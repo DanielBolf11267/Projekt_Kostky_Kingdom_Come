@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblNazev = new Label();
             lblSazka = new Label();
             bntSolo = new Button();
@@ -37,6 +38,7 @@
             rb50 = new RadioButton();
             rb100 = new RadioButton();
             btnNapoveda = new Button();
+            lblRezim = new Label();
             SuspendLayout();
             // 
             // lblNazev
@@ -61,7 +63,7 @@
             // 
             // bntSolo
             // 
-            bntSolo.Location = new Point(300, 150);
+            bntSolo.Location = new Point(300, 120);
             bntSolo.Name = "bntSolo";
             bntSolo.Size = new Size(200, 60);
             bntSolo.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // btnDuel
             // 
-            btnDuel.Location = new Point(300, 230);
+            btnDuel.Location = new Point(300, 190);
             btnDuel.Name = "btnDuel";
             btnDuel.Size = new Size(200, 60);
             btnDuel.TabIndex = 3;
@@ -128,12 +130,22 @@
             btnNapoveda.Text = "NÁPOVĚDA";
             btnNapoveda.UseVisualStyleBackColor = true;
             // 
+            // lblRezim
+            // 
+            lblRezim.Location = new Point(350, 270);
+            lblRezim.Name = "lblRezim";
+            lblRezim.Size = new Size(100, 23);
+            lblRezim.TabIndex = 9;
+            lblRezim.Text = "Režim:";
+            lblRezim.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.pozadi3;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(784, 561);
+            Controls.Add(lblRezim);
             Controls.Add(btnNapoveda);
             Controls.Add(rb100);
             Controls.Add(rb50);
@@ -148,7 +160,6 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -164,5 +175,6 @@
         private RadioButton rb50;
         private RadioButton rb100;
         private Button btnNapoveda;
+        private Label lblRezim;
     }
 }
