@@ -74,12 +74,12 @@
             btnZpet.TabIndex = 3;
             btnZpet.Text = "ZPĚT";
             btnZpet.UseVisualStyleBackColor = true;
+            btnZpet.Click += btnZpet_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.pozadi2;
             ClientSize = new Size(984, 561);
             Controls.Add(btnZpet);
             Controls.Add(textBox3);

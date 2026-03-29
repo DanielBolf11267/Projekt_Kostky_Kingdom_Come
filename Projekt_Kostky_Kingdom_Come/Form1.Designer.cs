@@ -143,7 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Image.FromFile("Resources/pozadi1.png");
             ClientSize = new Size(784, 561);
             Controls.Add(lblRezim);
             Controls.Add(btnNapoveda);

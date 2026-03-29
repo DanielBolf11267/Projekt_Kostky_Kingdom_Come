@@ -13,14 +13,14 @@ namespace Projekt_Kostky_Kingdom_Come
         private void btnSolo_Click(object sender, EventArgs e)
         {
             vybranyRezim = "solo";
-            //  lblRezim.Text = "Režim: SOLO";
+            lblRezim.Text = "Režim: SOLO";
         }
 
         // DUEL
         private void btnDuel_Click(object sender, EventArgs e)
         {
             vybranyRezim = "duel";
-            // lblRezim.Text = "Režim: DUEL";
+            lblRezim.Text = "Režim: DUEL";
         }
 
         // SÁZKA 20
@@ -65,6 +65,5 @@ namespace Projekt_Kostky_Kingdom_Come
             Form3 napoveda = new Form3();
             napoveda.ShowDialog();
         }
-
     }
 }

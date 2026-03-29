@@ -21,5 +21,10 @@ namespace Projekt_Kostky_Kingdom_Come
         {
 
         }
+
+        private void btnZpet_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
