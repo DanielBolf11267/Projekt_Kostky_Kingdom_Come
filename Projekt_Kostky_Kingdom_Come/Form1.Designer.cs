@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblNazev = new Label();
             lblSazka = new Label();
             bntSolo = new Button();
@@ -69,6 +68,7 @@
             bntSolo.TabIndex = 2;
             bntSolo.Text = "SOLO";
             bntSolo.UseVisualStyleBackColor = true;
+            bntSolo.Click += btnSolo_Click;
             // 
             // btnDuel
             // 
@@ -78,6 +78,7 @@
             btnDuel.TabIndex = 3;
             btnDuel.Text = "DUEL";
             btnDuel.UseVisualStyleBackColor = true;
+            btnDuel.Click += btnDuel_Click;
             // 
             // btnStart
             // 
@@ -87,6 +88,7 @@
             btnStart.TabIndex = 4;
             btnStart.Text = "SPUSTIT HRU";
             btnStart.UseVisualStyleBackColor = true;
+            btnStart.Click += btnStart_Click;
             // 
             // rb20
             // 
@@ -98,6 +100,7 @@
             rb20.TabStop = true;
             rb20.Text = "20";
             rb20.UseVisualStyleBackColor = true;
+            rb20.Click += rb20_CheckedChanged;
             // 
             // rb50
             // 
@@ -109,6 +112,7 @@
             rb50.TabStop = true;
             rb50.Text = "50";
             rb50.UseVisualStyleBackColor = true;
+            rb50.Click += rb50_CheckedChanged;
             // 
             // rb100
             // 
@@ -120,6 +124,7 @@
             rb100.TabStop = true;
             rb100.Text = "100";
             rb100.UseVisualStyleBackColor = true;
+            rb100.Click += rb100_CheckedChanged;
             // 
             // btnNapoveda
             // 
@@ -129,6 +134,7 @@
             btnNapoveda.TabIndex = 8;
             btnNapoveda.Text = "NÁPOVĚDA";
             btnNapoveda.UseVisualStyleBackColor = true;
+            btnNapoveda.Click += btnNapoveda_Click;
             // 
             // lblRezim
             // 
@@ -143,7 +149,6 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Image.FromFile("Resources/pozadi1.png");
             ClientSize = new Size(784, 561);
             Controls.Add(lblRezim);
             Controls.Add(btnNapoveda);

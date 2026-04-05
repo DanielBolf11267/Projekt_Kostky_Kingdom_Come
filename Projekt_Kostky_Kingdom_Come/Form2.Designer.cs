@@ -84,6 +84,8 @@
             pictureBox2.Size = new Size(80, 80);
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+
             // 
             // pictureBox3
             // 
@@ -92,6 +94,8 @@
             pictureBox3.Size = new Size(80, 80);
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+
             // 
             // pictureBox4
             // 
@@ -100,6 +104,8 @@
             pictureBox4.Size = new Size(80, 80);
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+
             // 
             // pictureBox5
             // 
@@ -108,6 +114,8 @@
             pictureBox5.Size = new Size(80, 80);
             pictureBox5.TabIndex = 6;
             pictureBox5.TabStop = false;
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+
             // 
             // pictureBox6
             // 
@@ -116,6 +124,8 @@
             pictureBox6.Size = new Size(80, 80);
             pictureBox6.TabIndex = 7;
             pictureBox6.TabStop = false;
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+
             // 
             // lblBodyZaKolo
             // 
@@ -143,6 +153,7 @@
             btnHodit.TabIndex = 10;
             btnHodit.Text = "HODIT";
             btnHodit.UseVisualStyleBackColor = true;
+            btnHodit.Click += btnHodit_Click;
             // 
             // btnKonecTahu
             // 
@@ -152,6 +163,7 @@
             btnKonecTahu.TabIndex = 11;
             btnKonecTahu.Text = "UKONČIT TAH";
             btnKonecTahu.UseVisualStyleBackColor = true;
+            btnKonecTahu.Click += btnKonecTahu_Click;
             // 
             // Form2
             // 
